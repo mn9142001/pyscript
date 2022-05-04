@@ -27,7 +27,7 @@ function ltrim(code: string): string {
     const k = Math.min(...lengths);
 
     if (k != 0) return lines.map(line => line.substring(k)).join('\n');
-    else return code;
+    return code;
 }
 
 function guidGenerator(): string {
